@@ -32,7 +32,7 @@ def get_messages(limit: int = 50) -> list[dict]:
     return data["messages"][-limit:]
 
 
-ALLOWED_REACTIONS = {'❤️', '🤣', '👍', '😒', '😢'}
+ALLOWED_REACTIONS = {'❤️', '🤣', '👍', '😒', '😢', '👌'}
 
 
 def save_message(username: str, text: str, timestamp: str | None = None, reply: dict | None = None) -> dict:
